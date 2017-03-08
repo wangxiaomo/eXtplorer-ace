@@ -6,6 +6,8 @@
     "type": "project",
     "require": {
         "php": ">=5.6.4",
+        "barryvdh/elfinder-flysystem-driver": "^0.2.0",
+        "barryvdh/laravel-elfinder": "^0.3.10",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0"
     },
@@ -20,7 +22,10 @@
         ],
         "psr-4": {
             "App\\": "app/"
-        }
+        },
+        "files": [
+            "app/Support/utils.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
