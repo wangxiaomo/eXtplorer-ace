@@ -13,6 +13,11 @@
 
 Route::get('/edit', function() {
     $filename = request()->input('file');
+    $trip_alias = request()->input('trip_alias');
+    if($trip_alias){
+        $filename = preg_replace('/IXF/', '/data/env/www', $filename, 1);
+    }
+
     if(check_file_path($filename)){
         // save filepath in session
         $realpath = realpath($filename);

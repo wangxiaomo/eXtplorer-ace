@@ -66,7 +66,7 @@ return array(
     'roots' => [
         [
             'driver'    =>  'LocalFileSystem',
-            'path'      =>  '/',
+            'path'      =>  '/data/env/www',
             'alias'     =>  'IXF',
         ],
     ],
